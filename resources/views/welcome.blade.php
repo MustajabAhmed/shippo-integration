@@ -918,7 +918,7 @@
                                 fill="currentColor" />
                         </svg>
                     </div>
-                    
+
                     @if (Route::has('login'))
                         <nav class="-mx-3 flex flex-1 justify-end">
                             @auth
@@ -942,8 +942,13 @@
                         </nav>
                     @endif
                 </header>
-                <a href="{{ route('shipment.form') }}">Shipment</a><br><br>
-                    <a href="{{ route('order.form') }}">Order</a>
+                <main class="">
+                    <div class="mx-auto p-4 text-center font-bold lg:p-
+                    6 lg:text-left">
+                        <a href="{{ route('shipment.form') }}">Shipment</a><br><br>
+                        <a href="{{ route('order.form') }}">Order</a>
+                    </div>
+                </main>
                 <main class="mt-6">
                     <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
                         <a href="https://laravel.com/docs" id="docs-card"
